@@ -407,7 +407,7 @@ a {color: #2194CE;
 					div.textContent = name;
 					div.addEventListener( 'click', function () {
 
-						load( three.js-master\examples\file );
+						load(file );
 
 					} );
 					container.appendChild( div );
@@ -427,7 +427,7 @@ a {color: #2194CE;
 			divs[ file ].className = 'link selected';
 
 			window.location.hash = file;
-			viewer.src = file + '.html';
+			viewer.src ='three.js-master\examples\'+file + '.html';
 			viewer.focus();
 
 			button.style.display = '';
